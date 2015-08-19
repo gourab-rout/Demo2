@@ -67,7 +67,7 @@ Project setup
 1. Open command prompt and navigate to project location.
 2. Run the command mvn clean package.
 3. When build is successful project archive is created as shown below
-    ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/sftp%20path%20conf1.PNG)
+    ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/target.png)
 4. Now copy this archive to appps folder of the standalone server
 5. start mule by navigating to 
 6. When successfully deployed it shows below message 
