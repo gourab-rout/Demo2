@@ -18,7 +18,7 @@ Project setup
 
 ### Step 1: Set Up Crush SFTP SERVER
 
-1. Install crush sftp server from <a href="http://www.crushftp.com/">
+1. Install crush sftp server from <a href="http://www.crushftp.com/"> http://www.crushftp.com/
 2. Extract the zip file and run CRUSHFTP.exe. The following dialogue box is opened
  
  ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/crushftpexe.PNG)
