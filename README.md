@@ -3,12 +3,12 @@
 Purpose
 =======
 
-The sftp-file-poll project polls file from a read only folder.
+Read files from read only Sftp folder.
 
-Prerequisites
-=============
+Components Used To Develop Project
+==================================
 
-1. CRUSHFTP SERVER
+1. CrushFTP
 2. Anypoint Studio
 3. mule-ee-distribution-standalone-3.7.1
 4. apache-maven-3.3.3-bin
@@ -16,9 +16,9 @@ Prerequisites
 Project setup
 ==============
 
-### Step 1: Set Up Crush SFTP SERVER
+### Step 1: Set Up Crush SFTP Server
 
-1. Install crush sftp server from <a href="http://www.crushftp.com/"> http://www.crushftp.com/
+1. Download crush sftp server from <a href="http://www.crushftp.com/"> http://www.crushftp.com/
 2. Extract the zip file and run CRUSHFTP.exe. The following dialogue box is opened
  
  ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/crushftpexe.PNG)
