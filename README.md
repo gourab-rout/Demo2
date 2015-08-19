@@ -12,6 +12,8 @@ Prerequisites
 2. Anypoint Studio
 3. mule-ee-distribution-standalone-3.7.1
 4. apache-maven-3.3.3-bin
+5. 
+ ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/crushftpexe.PNG)
 
 Project setup
 ==============
