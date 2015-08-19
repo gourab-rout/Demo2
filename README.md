@@ -1,4 +1,4 @@
-# SFTP FILE POLL USECASE
+Sftp File Polling
 
 Purpose
 =======
