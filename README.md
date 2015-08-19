@@ -47,7 +47,7 @@ Project setup
 
 1. To import first extract the project "sftp-file-poll.zip". Then import as "Maven based Mule Project from pom.xml"
 
-    ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/sftp%20path%20conf1.PNG)
+    ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/projectimport.PNG)
     
 2. The studio run time is to be Mule Server 3.6.0 EE and studio should have been updated with munit plugins.
 3. Open file sftp.properties available under src/main/resources. change the properties to reflect actual sftp properties.
@@ -58,7 +58,7 @@ Project setup
 2. To handle this scenario a custom java code is wriiten, which changes the connector functionality to avoid duplicate file processing. These java file area available under src/main/java/ and in package org.mule.trasport.sftp.
 3. This java file is injected as the message receiver class for the sftp connector as shown below.
 
-    ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/sftp%20path%20conf1.PNG)
+    ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/messagereceiver.png)
     
 4. 
 
@@ -72,10 +72,10 @@ Project setup
 5. start mule by navigating to 
 6. When successfully deployed it shows below message 
 
-![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/sftp%20path%20conf1.PNG) 
+![ScreenShot]https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/deploy.PNG) 
 
 7. Below is the log snippet
-![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/sftp%20path%20conf1.PNG) 
+![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/logsnippet.png) 
 
 ### Step 5: Test Case
 
