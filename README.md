@@ -20,7 +20,7 @@ Project setup
           
         * Install crush sftp server from <a href="http://www.crushftp.com/">
         * Extract the zip file and run CRUSHFTP.exe. The following dialogue box is opened
-          <img src="https://github.com/indiramallick1988/Demo2/blob/master/tool/crushftpexe.PNG")
+          ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/crushftpexe.PNG)
          
          Markup : ![picture alt](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/crushftpexe.PNG "Title is optional")
 
