@@ -32,11 +32,11 @@ Project setup
 5.To configure sftp polling path as read only log on to server <a href="http://127.0.0.1:8080/"> http://127.0.0.1:8080/
   Create a new user by navigating "Admin"---> "User Manager" -----> "Add".
   
-  ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/crushftpexe.PNG)
-  ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/crushftpexe.PNG)
+  ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/admin.PNG)
+  ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/usermanager1.png)
   
 6.To configure the sftp path click on the newly created user. Drag file from Server to user and give it read only access.
-  ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/crushftpexe.PNG)
+  ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/sftp%20path%20conf1.PNG)
 
 7. Now log on to the sftp server with credentials of newly created user to check if the path has correctly configured.
  
