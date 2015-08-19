@@ -50,6 +50,7 @@ Project setup
     ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/sftp%20path%20conf1.PNG)
     
 2. The studio run time is to be Mule Server 3.6.0 EE and studio should have been updated with munit plugins.
+3. Open file sftp.properties available under src/main/resources. change the properties to reflect actual sftp properties.
 
 ### Step 3: Code Functinality details
 
@@ -60,5 +61,13 @@ Project setup
     ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/sftp%20path%20conf1.PNG)
     
 4. 
+
+### Step 4: Running Project in Standalone Server
+
+1. Open command prompt and navigate to project location.
+2. Run the command mvn clean package.
+3. When build is successful project archive is created as shown below
+    ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/sftp%20path%20conf1.PNG)
+4. Now copy this archive to appps folder of the
 
 
