@@ -22,9 +22,7 @@ Project setup
         * Extract the zip file and run CRUSHFTP.exe. The following dialogue box is opened
           <img src="https://github.com/indiramallick1988/Demo2/blob/master/tool/crushftpexe.PNG")
          
-         <a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
-" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+         Markup : ![picture alt](https://github.com/indiramallick1988/Demo2/blob/master/tool/crushftpexe.PNG "Title is optional")
 
 ### Step 2: Import Mule project
 
