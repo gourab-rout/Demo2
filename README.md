@@ -20,7 +20,7 @@ Project setup
 
 1. Install crush sftp server from <a href="http://www.crushftp.com/">
 2. Extract the zip file and run CRUSHFTP.exe. The following dialogue box is opened
-3. 
+ 
  ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/crushftpexe.PNG)
 
 ### Step 2: Import Mule project
