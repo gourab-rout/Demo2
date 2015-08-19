@@ -74,5 +74,13 @@ Project setup
 
 ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/sftp%20path%20conf1.PNG) 
 
+7. Below is the log snippet
+![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/sftp%20path%20conf1.PNG) 
 
+### Step 5: Test Case
 
+1. In mule end points are by default mock
+2. The project uses java based munit to test duplicate file processing scenario
+3. Below is the log snippet
+
+![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/junit.PNG) 
