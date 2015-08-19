@@ -68,6 +68,10 @@ Project setup
 2. Run the command mvn clean package.
 3. When build is successful project archive is created as shown below
     ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/sftp%20path%20conf1.PNG)
-4. Now copy this archive to appps folder of the
+4. Now copy this archive to appps folder of the ee.
+5. In command prompt navigate to.... start mule.bat. If the projects are deployed successfullly then it displays as below
+    
+    ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/sftp%20path%20conf1.PNG)
+6. 
 
 
