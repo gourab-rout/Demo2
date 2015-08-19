@@ -38,7 +38,7 @@ Project setup
   ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/crushftpexe.PNG)
 
 7. Now log on to the sftp server with credentials of newly created user to check if the path has correctly configured.
-8. 
+ 
 ### Step 2: Import Mule project
 
 ### Step 3: Running project in standalone server
