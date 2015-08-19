@@ -17,6 +17,10 @@ Project setup
 ==============
 
 ### Step 1: Set Up Crush SFTP SERVER
+          
+        * Install crush sftp server from <a href="http://www.crushftp.com/">
+        * Extract the zip file and run CRUSHFTP.exe. The following dialogue box is opened
+         ![bunyan CLI screenshot](https://github.com/indiramallick1988/Demo2/blob/master/tool/crushftpexe.PNG)
 
 ### Step 2: Import Mule project
 
