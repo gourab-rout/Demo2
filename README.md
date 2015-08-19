@@ -45,4 +45,6 @@ Project setup
  
 ### Step 2: Import Mule project
 
+1. To import the project, extract the project ""
+
 ### Step 3: Running project in standalone server
