@@ -42,7 +42,7 @@ Project setup
 
   ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/sftp%20path%20conf1.PNG)
 
-7. Now log on to the sftp server with credentials of newly created user to check if the path has correctly configured.
+7 Now log on to the sftp server with credentials of newly created user to check if the path has correctly configured.
  
 ### Step 2: Import Mule project
 
@@ -50,18 +50,20 @@ Project setup
 
     ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/projectimport.PNG)
     
-2. The project is developed with studio run time Mule Server 3.6.0 EE and ensure mule studio has required munit plugins.
+2. The project is developed and tested with studio run time Mule Server 3.6.0 EE. Please ensure mule studio has required munit plugins.
 3. Open file sftp.properties available under src/main/resources. change the properties to reflect actual sftp parameters.
+    
+![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/sftp cred.PNG)
 
 ### Step 3: Code Functinality details
 
 1. By default sftp connector does not handle duplicate file polling. 
-2. To handle this scenario a custom java code is wriiten, which changes the connector functionality to avoid duplicate file processing. These java file area available under src/main/java/ 
+2. To handle duplicate file handling scenario, a custom java code is wriiten, which changes the connector functionality to avoid duplicate file processing. These java file area available under src/main/java/ 
  
   ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/javacode.png)
 
 3. The files after polling are stored in Mule embedded in-memory derby data base. This configuration is done in the class "StorePolledFiles.java". The class "CustomSftpReceiverRequesterUtil.java" (which checks the available files in inbound folder and picks them for process ) before picking the files to process, checks in the database if the file is already processed.
-4. This java class "CustomSftpMessageReceiver.java"which calls the poll method and "CustomSftpReceiverRequesterUtil.java"  is injected as the message receiver class for the sftp connector as shown below.
+4. This java class "CustomSftpMessageReceiver.java" (which calls the poll method and "CustomSftpReceiverRequesterUtil.java" ) is injected as the message receiver class for the sftp connector as shown below.
 
     ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/messagereceiver.png)
 
@@ -83,8 +85,8 @@ Project setup
 
 ### Step 5: Test Case
 
-1. In mule end points are by default mock
-2. The project uses java based munit to test duplicate file processing scenario
-3. Below is the log snippet
+1. In mule end points are by default mocked. The project uses mock sftp data for testing.
+2. The project uses java based munit framework to test duplicate file processing scenario.
+3. The testing log snippet is as shown below
 
 ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/junit.PNG) 
