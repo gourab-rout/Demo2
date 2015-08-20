@@ -73,11 +73,9 @@ Project setup
 
 1. Open command prompt and navigate to project location.
 2. Run the command "mvn clean package".
- 
-![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/target.png)
-
+ ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/buildscreen.PNG)
 3. When build is successful project archive "sftp-file-poll-1.0.0-SNAPSHOT.zip" is created as shown below
-    ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/buildscreen.PNG)
+ ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/target.png)
 4. Now copy this archive to appps folder of the standalone server( mule-enterprise-standalone-3.7.1/apps)
 5. start mule by navigating to (mule-enterprise-standalone-3.7.1/bin/)
 6. When successfully deployed it shows below message 
