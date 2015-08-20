@@ -65,7 +65,7 @@ Project setup
 3. The files after polling are stored in Mule embedded in-memory derby data base. This configuration is done in the class "StorePolledFiles.java". The class "CustomSftpReceiverRequesterUtil.java" (which checks the available files in inbound folder and picks them for process ) before picking the files to process, checks in the database if the file is already processed.
 4. This java class "CustomSftpMessageReceiver.java" (which calls the poll method and "CustomSftpReceiverRequesterUtil.java" ) is injected as the message receiver class for the sftp connector as shown below.
 
-    ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/messagereceiver.png)
+    ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/Capture.png)
 
 
 ### Step 4: Running Project in Standalone Server
