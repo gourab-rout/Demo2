@@ -89,6 +89,7 @@ Project setup
 
 1. In mule end points are by default mocked. The project uses mock sftp data for testing.
 2. The project uses java based munit framework to test duplicate file processing scenario.
-3. The testing log snippet is as shown below
+3. The test java class is available in src/test/java/MunitSFTPPollTest.java
+4. When trying to push same file twice below  log snippet is as shown 
 
 ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/junit.PNG) 
