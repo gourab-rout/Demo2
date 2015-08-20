@@ -39,37 +39,41 @@ Project setup
   ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/usermanager1.png)
   
 6.To configure the sftp path click on the newly created user. Drag file from Server to user and give it read only access.
+
   ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/sftp%20path%20conf1.PNG)
 
 7. Now log on to the sftp server with credentials of newly created user to check if the path has correctly configured.
  
 ### Step 2: Import Mule project
 
-1. To import first extract the project "sftp-file-poll.zip". Then import as "Maven based Mule Project from pom.xml"
+1. To import the project, first extract "sftp-file-poll.zip". Then import it as "Maven based Mule Project from pom.xml"
 
     ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/projectimport.PNG)
     
-2. The studio run time is to be Mule Server 3.6.0 EE and studio should have been updated with munit plugins.
-3. Open file sftp.properties available under src/main/resources. change the properties to reflect actual sftp properties.
+2. The project is developed with studio run time Mule Server 3.6.0 EE and ensure mule studio has required munit plugins.
+3. Open file sftp.properties available under src/main/resources. change the properties to reflect actual sftp parameters.
 
 ### Step 3: Code Functinality details
 
 1. By default sftp connector does not handle duplicate file polling. 
-2. To handle this scenario a custom java code is wriiten, which changes the connector functionality to avoid duplicate file processing. These java file area available under src/main/java/ and in package org.mule.trasport.sftp.
-3. This java file is injected as the message receiver class for the sftp connector as shown below.
+2. To handle this scenario a custom java code is wriiten, which changes the connector functionality to avoid duplicate file processing. These java file area available under src/main/java/ 
+ 
+  ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/javacode.png)
+
+3. The files after polling are stored in Mule embedded in-memory derby data base. This configuration is done in the class "StorePolledFiles.java". The class "CustomSftpReceiverRequesterUtil.java" (which checks the available files in inbound folder and picks them for process ) before picking the files to process, checks in the database if the file is already processed.
+4. This java class "CustomSftpMessageReceiver.java"which calls the poll method and "CustomSftpReceiverRequesterUtil.java"  is injected as the message receiver class for the sftp connector as shown below.
 
     ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/messagereceiver.png)
-    
-4. 
+
 
 ### Step 4: Running Project in Standalone Server
 
 1. Open command prompt and navigate to project location.
-2. Run the command mvn clean package.
+2. Run the command "mvn clean package".
 3. When build is successful project archive is created as shown below
     ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/target.png)
-4. Now copy this archive to appps folder of the standalone server
-5. start mule by navigating to 
+4. Now copy this archive to appps folder of the standalone server( mule-enterprise-standalone-3.7.1/apps)
+5. start mule by navigating to (mule-enterprise-standalone-3.7.1/bin/)
 6. When successfully deployed it shows below message 
 
 ![ScreenShot]https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/deploy.PNG) 
