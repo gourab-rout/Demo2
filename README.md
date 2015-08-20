@@ -51,14 +51,14 @@ Project setup
     ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/projectimport.PNG)
     
 2. The project is developed and tested with studio run time Mule Server 3.6.0 EE. Please ensure mule studio has required munit plugins.
-3. Open file sftp.properties available under src/main/resources. change the properties to reflect actual sftp parameters.
+3. Open file sftp.properties available under src/main/resources. Change the properties to reflect actual sftp parameters.
     
 ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/sftp cred.PNG)
 
 ### Step 3: Code Functinality details
 
 1. By default sftp connector does not handle duplicate file polling. 
-2. To handle duplicate file handling scenario, a custom java code is wriiten, which changes the connector functionality to avoid duplicate file processing. These java file area available under src/main/java/ 
+2. To handle duplicate file handling scenario, custom java codes are wriiten, which overrides the connector functionality to avoid duplicate file processing. These java files area available under src/main/java/ 
  
   ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/javacode.png)
 
