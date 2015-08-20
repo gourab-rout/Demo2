@@ -62,7 +62,7 @@ Project setup
  
   ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/javacode.png)
 
-3. The files which are polled are inserted into database table 'FileDB'. The database used is Mule Embedded in memory derby database. This configuration is done in the class "StorePolledFiles.java". 
+3. The file names after poll are inserted into database table 'FileDB'. The database used is Mule Embedded in memory derby database. This code for the same is written in the class "StorePolledFiles.java". 
 4. The class "CustomSftpReceiverRequesterUtil.java" (which checks the available files in inbound folder and picks them for process ) before picking the files to process, checks in the database if the file is already processed.
 5. This java class "CustomSftpMessageReceiver.java" (which calls the poll method and "CustomSftpReceiverRequesterUtil.java" ) is injected as the message receiver class for the sftp connector as shown below.
 
