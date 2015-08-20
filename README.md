@@ -73,7 +73,7 @@ Project setup
 
 1. Open command prompt and navigate to project location.
 2. Run the command "mvn clean package".
-3. 
+ 
 ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/target.png)
 
 3. When build is successful project archive "sftp-file-poll-1.0.0-SNAPSHOT.zip" is created as shown below
