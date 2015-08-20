@@ -62,21 +62,22 @@ Project setup
  
   ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/javacode.png)
 
-3. The file name after each polling is inserted into database table 'FileDB'. The database used is Mule Embedded in memory derby database. This code for the same is written in the class "StorePolledFiles.java". 
-4. The class "CustomSftpReceiverRequesterUtil.java" checks the available files in inbound folder and picks them for processing. Before picking the files to process, it checks in the database if the file is already processed or not.
-5. The java class "CustomSftpMessageReceiver.java" (which has the poll method from which "CustomSftpReceiverRequesterUtil.java" is called) is injected as the message receiver class for the sftp connector as shown below.
+3. The files which are polled are inserted into database table 'FileDB'. The database used is Mule Embedded in memory derby database. This configuration is done in the class "StorePolledFiles.java". 
+4. The class "CustomSftpReceiverRequesterUtil.java" (which checks the available files in inbound folder and picks them for process ) before picking the files to process, checks in the database if the file is already processed.
+5. This java class "CustomSftpMessageReceiver.java" (which calls the poll method and "CustomSftpReceiverRequesterUtil.java" ) is injected as the message receiver class for the sftp connector as shown below.
 
     ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/Capture.PNG)
 
 
 ### Step 4: Running Project in Standalone Server
 
-To run the project in stand alone server follow the below process.
-
-1. Open command prompt and navigate to the project location.
+1. Open command prompt and navigate to project location.
 2. Run the command "mvn clean package".
-3. When build is successful project archive is created as shown below
-    ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/target.png)
+3. 
+![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/target.png)
+
+3. When build is successful project archive "sftp-file-poll-1.0.0-SNAPSHOT.zip" is created as shown below
+    ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/buildscreen.PNG)
 4. Now copy this archive to appps folder of the standalone server( mule-enterprise-standalone-3.7.1/apps)
 5. start mule by navigating to (mule-enterprise-standalone-3.7.1/bin/)
 6. When successfully deployed it shows below message 
