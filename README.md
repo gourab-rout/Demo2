@@ -71,7 +71,9 @@ Project setup
 
 ### Step 4: Running Project in Standalone Server
 
-1. Open command prompt and navigate to project location.
+To run the project in stand alone server follow the below process.
+
+1. Open command prompt and navigate to the project location.
 2. Run the command "mvn clean package".
 3. When build is successful project archive is created as shown below
     ![ScreenShot](https://raw.githubusercontent.com/indiramallick1988/Demo2/master/tool/target.png)
